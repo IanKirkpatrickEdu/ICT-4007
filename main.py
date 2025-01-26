@@ -9,11 +9,11 @@ from middleware.logging import LoggingMiddleware
 import contextlib
 from typing import AsyncGenerator
 
-import fastapi
-
 # from fastapi.middleware.trustedhost import TrustedHostMiddleware
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.middleware.gzip import GZipMiddleware
+
+import fastapi
 
 settings: Settings = get_settings()
 
